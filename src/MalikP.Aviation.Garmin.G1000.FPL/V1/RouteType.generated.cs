@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System.Collections.Generic;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.V1
@@ -15,7 +16,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V1
         public string FlightPlanIndex { get; set; }
 
         [XmlElement("route-point")]
-        public RoutePointType[] RoutePoints { get; set; }
+        public List<RoutePointType> RoutePoints { get; set; } = new List<RoutePointType>();
 
         [XmlElement("extensions")]
         public ExtensionsType Extensions { get; set; }

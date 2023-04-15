@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -23,7 +24,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V1
 
         [XmlArray("waypoint-table")]
         [XmlArrayItem("waypoint", IsNullable = false)]
-        public WaypointType[] Waypoints { get; set; }
+        public List<WaypointType> Waypoints { get; set; } = new List<WaypointType>();
 
         [XmlElement("route")]
         public RouteType Route { get; set; }

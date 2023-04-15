@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System.Collections.Generic;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.V1
@@ -6,6 +7,6 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V1
     public partial class ExtensionsType
     {
         [XmlAnyElement]
-        public XmlElement[] Any { get; set; }
+        public List<XmlElement> Any { get; set; } = new List<XmlElement>();
     }
 }
