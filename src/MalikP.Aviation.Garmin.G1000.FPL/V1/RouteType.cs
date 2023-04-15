@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Xml.Serialization;
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.V1
 {
