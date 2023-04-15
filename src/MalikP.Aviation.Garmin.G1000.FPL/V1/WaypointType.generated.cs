@@ -3,9 +3,6 @@ using System.Xml.Serialization;
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.V1
 {
-    [Serializable]
-    [XmlType(Namespace = "http://www8.garmin.com/xmlschemas/FlightPlan/v1")]
-    [XmlRoot(ElementName = "waypoint")]
     public partial class WaypointType
     {
         [XmlElement("identifier")]
