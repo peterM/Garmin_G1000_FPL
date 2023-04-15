@@ -2,6 +2,10 @@
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.V1
 {
+    /// <summary>
+    /// RoutePointType -> 'waypoint-type'
+    /// WaypointType -> 'type'
+    /// </summary>
     [Serializable]
     [XmlType(Namespace = "http://www8.garmin.com/xmlschemas/FlightPlan/v1")]
     [XmlRoot(ElementName = "waypoint-type")]

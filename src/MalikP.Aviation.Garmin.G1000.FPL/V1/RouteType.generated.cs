@@ -18,7 +18,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V1
         public string FlightPlanIndex { get; set; }
 
         [XmlElement("route-point")]
-        public RoutePointType[] RoutePoint { get; set; }
+        public RoutePointType[] RoutePoints { get; set; }
 
         [XmlElement("extensions")]
         public ExtensionsType Extensions { get; set; }
