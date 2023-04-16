@@ -28,7 +28,12 @@ ENT Key, select another flight plan slot, and press the IMPORT Softkey again.
 9) Press the ENT Key again to confirm the import.
 ```
 
-### `Version 1` Example:
+#### Flight plan file Extension
+
+File extension should be `*.fpl`. Therefore when you saving generated file use extension `*.fpl`
+
+
+#### `Version 1` Example:
 
 ```xml
 <flight-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www8.garmin.com/xmlschemas/FlightPlan/v1">
