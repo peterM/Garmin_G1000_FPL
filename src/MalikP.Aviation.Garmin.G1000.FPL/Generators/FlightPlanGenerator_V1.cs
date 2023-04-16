@@ -18,7 +18,11 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Generators
 
         protected override IFlightPlan GetFinalizedFlightPlan(IFlightPlanDescriptor flightPlanDescriptor, IEnumerable<KeyValuePair<int, IWaypoint>> waypoints, IRoute route)
         {
-            return new FlightPlanType();
+            IFlightPlan fpl = new FlightPlanType();
+            fpl.AddRoute(route);
+            fpl.AddWaypoints(waypoints);
+
+            return fpl;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
     {
         static void Main(string[] args)
         {
-            //var fpl = new Test_V1().GetFpl_V1();
+            var fpl = new Test_V1().GetFpl_V1();
 
             // Could be connected to some GUI and generated depoending on GUI design.
             FlightPlanType flightPlan = new FlightPlanType

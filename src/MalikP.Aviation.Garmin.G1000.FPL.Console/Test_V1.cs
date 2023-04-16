@@ -54,7 +54,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
             IWaypointRepository_V1 waypointRepository = new WaypointRepository_V1();
             IFlightPlanGenerator fplGenerator = new FlightPlanGenerator_V1(waypointRepository, new RouteGenerator_V1(waypointRepository));
             return fplGenerator?.GetFlightPlan(flightPlanDescriptor)
-                ?.AsXml(default(IFlightPlanSerializer));
+                ?.AsXml(new FlightPlanSerializer());
         }
     }
 }
