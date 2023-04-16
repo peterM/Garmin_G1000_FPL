@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net5.0;net6.0;net7.0;netstandard2.1;netcoreapp2.0;netcoreapp3.1;netcoreapp2.1;netcoreapp2.2;netstandard2.0;net481;net48;net472;net471;net47;net462;net461;net46;net452</TargetFrameworks>
+
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <Nullable>disable</Nullable>
+	  <LangVersion>10</LangVersion>
+
+	  <Authors>MalikP.</Authors>
+	  <Description>Nuget packge with abstractions to create Garmin G1000 Flight Plans</Description>
+	  <Copyright>MalikP.</Copyright>
+	  <RepositoryType>GIT</RepositoryType>
+	  <PackageTags>Garmin;G1000;Garmin G1000;Aviation;FlightPlan</PackageTags>
+	  <Version>0.2.0.0</Version>
+	  <PackageProjectUrl>https://github.com/peterM/Garmin_G1000_FPL</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/peterM/Garmin_G1000_FPL</RepositoryUrl>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <PackageReleaseNotes>
+		  - Initial
+	  </PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

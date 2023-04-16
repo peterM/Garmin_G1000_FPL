@@ -23,4 +23,8 @@
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\MalikP.Aviation.Garmin.G1000.FPL.Abstraction\MalikP.Aviation.Garmin.G1000.FPL.Abstraction.csproj" />
+	</ItemGroup>
+
 </Project>
