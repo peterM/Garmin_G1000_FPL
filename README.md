@@ -6,6 +6,8 @@ There are not lot of differences between `version 1` and `version 2`.
 
 ## How to use
 
+**RISK NOTICE: YOU ARE DOING IT ALL ON YOUR OWN RISK. WE ARE NOT RESPONSIBLE IN CASE YOUR ACTIONS WILL DAMAGE YOUR AVIONICS. WHEN YOU ARE NOT SURE JUST STOP AND DO NOT CONTINUE** 
+
 ```
 Importing a Flight Plan from an SD Card:
 
