@@ -28,10 +28,9 @@ ENT Key, select another flight plan slot, and press the IMPORT Softkey again.
 9) Press the ENT Key again to confirm the import.
 ```
 
-### Flight plan file extension
+### Flight plan file
 
-File extension should be `*.fpl`. Therefore when you are saving generated file, use file extension `*.fpl`
-
+File extension should be `*.fpl`. It is *case sensitive* and file content have to be encoded using `UTF-8`.
 
 #### `Version 1` Example:
 
