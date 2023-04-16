@@ -2,6 +2,29 @@
 Object model to create Garmin G1000 Flight Plan files
 
 There are at least 2 versions of schema. For now this project supports `v1` and `v2`.
+There are not lot of differences between `version 1` and `version 2`.
+
+## How to use
+
+```
+Importing a Flight Plan from an SD Card:
+
+1) Insert the SD card containing the flight plan in the top card slot on the MFD.
+2) Press the FPL Key to display the Active Flight Plan Page on the MFD.
+3) Turn the small FMS Knob to select the Flight Plan Catalog Page.
+4) Press the FMS Knob to activate the cursor.
+5) Turn either FMS Knob to highlight an empty or existing flight plan.
+6) Press the IMPORT Softkey; or press the MENU Key, select “Import Flight Plan”, and press the ENT Key.
+If an empty slot is selected, a list of the available flight plans on the SD card will be displayed.
+Or:
+If an existing flight plan is selected, an “Overwrite existing flight plan? OK or CANCEL” prompt is displayed.
+Press the ENT Key to choose to overwrite the selected flight plan and see the list of available flight plans on the
+SD card. If overwriting the existing flight plan is not desired, select “CANCEL” using the FMS Knob, press the
+ENT Key, select another flight plan slot, and press the IMPORT Softkey again.
+7) Turn the small FMS Knob to highlight the desired flight plan for importing.
+8 ) Press the ENT Key to initiate the import.
+9) Press the ENT Key again to confirm the import.
+```
 
 `Version 1` Example:
 
