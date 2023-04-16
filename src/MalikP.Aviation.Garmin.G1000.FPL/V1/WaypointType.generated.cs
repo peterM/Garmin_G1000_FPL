@@ -9,7 +9,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V1
         public string Identifier { get; set; }
 
         [XmlElement("type")]
-        public WaypointTypeEnum WaypointTypetype { get; set; }
+        public WaypointTypeEnum Type { get; set; }
 
         [XmlElement("country-code")]
         public string CountryCode { get; set; }

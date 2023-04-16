@@ -2,5 +2,6 @@
 {
     public interface IFlightPlanDescriptor
     {
+        IRouteDescriptor Route { get; }
     }
 }

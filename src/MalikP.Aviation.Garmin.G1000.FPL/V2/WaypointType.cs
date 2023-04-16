@@ -10,5 +10,23 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V2
     [XmlRoot(ElementName = "waypoint")]
     public partial class WaypointType : IWaypoint
     {
+        public void AddToRoute<T>(T route)
+            where T : IRoute
+        {
+            if (route is RouteType rt)
+            {
+                AddToRoute(rt);
+            }
+        }
+
+        private void AddToRoute(RouteType rt)
+        {
+            rt.RoutePoints.Add(new RoutePointType
+            {
+                WaypointCountryCode = CountryCode,
+                WaypointIdentifier = Identifier,
+                WaypointType = Type
+            });
+        }
     }
 }

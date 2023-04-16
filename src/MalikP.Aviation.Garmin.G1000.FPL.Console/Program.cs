@@ -1,4 +1,7 @@
-﻿using MalikP.Aviation.Garmin.G1000.FPL.V1;
+﻿using System;
+using System.IO;
+
+using MalikP.Aviation.Garmin.G1000.FPL.V1;
 using MalikP.Core.Serialization.Xml;
 
 namespace MalikP.Aviation.Garmin.G1000.FPL.Console
@@ -7,6 +10,8 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
     {
         static void Main(string[] args)
         {
+            //var fpl = new Test_V1().GetFpl_V1();
+
             // Could be connected to some GUI and generated depoending on GUI design.
             FlightPlanType flightPlan = new FlightPlanType
             {
@@ -39,7 +44,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
                 Elevation = 436,
                 ElevationSpecified = true,
                 Identifier = "LZIB",
-                WaypointTypetype = WaypointTypeEnum.AIRPORT,
+                Type = WaypointTypeEnum.AIRPORT,
                 WaypointDescription = "LZIB - Bratislava",
                 Latitude = 48.170200m,
                 Longitude = 17.212700m,
@@ -52,7 +57,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
                 Elevation = 810,
                 ElevationSpecified = true,
                 Identifier = "NIT",
-                WaypointTypetype = WaypointTypeEnum.VOR,
+                Type = WaypointTypeEnum.VOR,
                 WaypointDescription = "NIT - NITRA",
                 Latitude = 48.290401m,
                 Longitude = 18.050600m,
@@ -65,7 +70,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
                 Elevation = 1670,
                 ElevationSpecified = true,
                 Identifier = "SLC",
-                WaypointTypetype = WaypointTypeEnum.VOR,
+                Type = WaypointTypeEnum.VOR,
                 WaypointDescription = "SLC - SLIAC",
                 Latitude = 48.453201m,
                 Longitude = 19.115900m,
@@ -78,7 +83,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
                 Elevation = 787,
                 ElevationSpecified = true,
                 Identifier = "KSC",
-                WaypointTypetype = WaypointTypeEnum.VOR,
+                Type = WaypointTypeEnum.VOR,
                 WaypointDescription = "KSC - KOSICE",
                 Latitude = 48.683102m,
                 Longitude = 21.248199m,
@@ -91,7 +96,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Console
                 Elevation = 755,
                 ElevationSpecified = true,
                 Identifier = "LZKZ",
-                WaypointTypetype = WaypointTypeEnum.AIRPORT,
+                Type = WaypointTypeEnum.AIRPORT,
                 WaypointDescription = "LZKZ - KOSICE",
                 Latitude = 48.663101m,
                 Longitude = 21.241100m,

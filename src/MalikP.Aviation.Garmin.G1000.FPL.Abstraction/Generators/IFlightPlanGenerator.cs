@@ -4,6 +4,6 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Abstraction.Generators
 {
     public interface IFlightPlanGenerator
     {
-        IFlightPlan GetRoute(IFlightPlanDescriptor flightPlanDescriptor);
+        IFlightPlan GetFlightPlan(IFlightPlanDescriptor flightPlanDescriptor);
     }
 }

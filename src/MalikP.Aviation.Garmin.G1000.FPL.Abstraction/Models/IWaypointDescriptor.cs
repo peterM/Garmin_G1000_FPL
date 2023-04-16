@@ -2,5 +2,8 @@
 {
     public interface IWaypointDescriptor
     {
+        string Identifier { get; }
+
+        string CountryCode { get; }
     }
 }

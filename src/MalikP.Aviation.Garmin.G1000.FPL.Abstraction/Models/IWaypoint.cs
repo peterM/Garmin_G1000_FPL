@@ -2,5 +2,7 @@
 {
     public interface IWaypoint
     {
+        void AddToRoute<T>(T route)
+            where T : IRoute;
     }
 }
