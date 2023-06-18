@@ -32,5 +32,17 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.V2
 
         public string AsXml(IFlightPlanSerializer flightPlanSerializer)
             => flightPlanSerializer?.SerializeToXml<FlightPlanType>(this);
+
+        public void RemoveRoute(bool removeUserWaypoints)
+        {
+            Route = null;
+
+            if (!removeUserWaypoints)
+            {
+                return;
+            }
+
+            Waypoints.Clear();
+        }
     }
 }

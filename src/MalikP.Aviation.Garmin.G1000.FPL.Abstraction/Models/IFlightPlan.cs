@@ -10,6 +10,8 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Abstraction.Models
 
         void AddWaypoints(IEnumerable<KeyValuePair<int, IWaypoint>> waypoints);
 
+        void RemoveRoute(bool removeUserWaypoints);
+
         public string AsXml(IFlightPlanSerializer flightPlanSerializer);
     }
 }

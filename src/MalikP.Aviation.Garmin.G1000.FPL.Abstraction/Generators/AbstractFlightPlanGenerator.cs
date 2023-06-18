@@ -24,10 +24,10 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Abstraction.Generators
 
         private IFlightPlan GenerateFlightPlan(IFlightPlanDescriptor flightPlanDescriptor)
         {
-            IEnumerable<KeyValuePair<int, IWaypoint>> waypoints = GetWaypoints(flightPlanDescriptor.Route);
+            IEnumerable<KeyValuePair<int, IWaypoint>> routeWaypoints = GetRouteWaypoints(flightPlanDescriptor.Route); 
             IRoute route = GetRoute(flightPlanDescriptor.Route);
 
-            return GetFinalizedFlightPlan(flightPlanDescriptor, waypoints, route);
+            return GetFinalizedFlightPlan(flightPlanDescriptor, routeWaypoints, route);
         }
 
         protected abstract IFlightPlan GetFinalizedFlightPlan(IFlightPlanDescriptor flightPlanDescriptor, IEnumerable<KeyValuePair<int, IWaypoint>> waypoints, IRoute route);
@@ -35,7 +35,7 @@ namespace MalikP.Aviation.Garmin.G1000.FPL.Abstraction.Generators
         protected virtual IRoute GetRoute(IRouteDescriptor route)
             => _routeGenerator.GetRoute(route);
 
-        protected virtual IEnumerable<KeyValuePair<int, IWaypoint>> GetWaypoints(IRouteDescriptor route)
+        protected virtual IEnumerable<KeyValuePair<int, IWaypoint>> GetRouteWaypoints(IRouteDescriptor route)
             => route?.Waypoints
                 ?.Select(d => new KeyValuePair<int, IWaypoint>(d.Key, _waypointRepository?.GetWaypoint(d.Value)))
                 ?.ToList();

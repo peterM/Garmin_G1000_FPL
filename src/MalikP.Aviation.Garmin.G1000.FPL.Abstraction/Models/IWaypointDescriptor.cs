@@ -4,6 +4,16 @@
     {
         string Identifier { get; }
 
+        decimal Latitude { get; }
+
+        decimal Longitude { get; }
+
+        decimal Elevation { get; }
+
         string CountryCode { get; }
+
+        string WaypointType { get; }
+
+        string Description { get; }
     }
 }
